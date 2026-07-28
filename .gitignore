@@ -1,0 +1,13 @@
+# Local secrets / publish config
+config.local.js
+config.local.json
+.env
+.env.*
+
+# Tool artifacts
+_v45_inline_check.js
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db

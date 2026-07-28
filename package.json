@@ -1,0 +1,17 @@
+{
+  "name": "web-qlda-v45",
+  "version": "45.0.0",
+  "private": true,
+  "description": "Web QLDA V45 with direct Google Drive attachment uploads",
+  "main": "giao-dien-desktop-don-gian_v45.html",
+  "scripts": {
+    "serve": "python -m http.server 8155 --bind 127.0.0.1",
+    "test": "node e2e_v45_small_attachment_ui.js && node e2e_v45_attachment_retry_ui.js && node e2e_v45_drive_direct_attachment_ui.js && node e2e_v45_drive_folder_hierarchy.js && node e2e_v45_drive_resumable_chunked.js && node e2e_v45_drive_500mb_resume.js && node e2e_v45_500mb_progress_ui.js && node e2e_v45_attachment_state_recovery.js && node e2e_v45_attachment_share_policy.js",
+    "test:oauth": "node diag_oauth_origin_playwright.js"
+  },
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.62.0"
+  }
+}
